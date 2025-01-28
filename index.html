@@ -3,68 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BA Coaching - Home</title>
-  <!-- Link Bootstrap for styling -->
+  <title>Career Guild - Business Analyst Coaching</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Link Bootstrap for quick responsiveness -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"> <!-- Link your custom CSS -->
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #1e1448, #362064, #472f8a);
+      background-size: cover;
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: transparent;
+    }
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .nav-link {
+      color: #ffffff;
+      margin-right: 15px;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #ff79cd;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .hero span {
+      color: #ff79cd;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .btn-primary {
+      background-color: #ff79cd;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 30px;
+      transition: background-color 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #ff3aa4;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+    }
+    .feature-box {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    .feature-box img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+    .feature-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .feature-box p {
+      font-size: 0.9rem;
+      color: #cfcfcf;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1448;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    footer p {
+      font-size: 0.9rem;
+      color: #cfcfcf;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html">BA Coaching</a>
+      <a class="navbar-brand" href="#">Career Guild</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Course</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Job Trends</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero text-center text-white bg-dark py-5">
-    <div class="container">
-      <h1 class="display-4">Master Business Analysis</h1>
-      <p class="lead">Your journey to becoming a successful Business Analyst starts here.</p>
-      <a href="courses.html" class="btn btn-primary btn-lg mt-3">Explore Courses</a>
-    </div>
+  <section class="hero">
+    <h1>Launch Your <span>Business Analyst</span> Career</h1>
+    <p>Career Guild is a specialized training institute focused on developing skilled Business Analysts. Through mentorship and real-time projects, we help job seekers excel.</p>
+    <a href="#" class="btn btn-primary">Explore the Course</a>
   </section>
 
   <!-- Features Section -->
-  <section class="features py-5">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-4">
-          <img src="images/feature1.png" alt="Learn" class="img-fluid mb-3">
-          <h3>Learn</h3>
-          <p>Access structured learning paths and real-world examples.</p>
-        </div>
-        <div class="col-md-4">
-          <img src="images/feature2.png" alt="Practice" class="img-fluid mb-3">
-          <h3>Practice</h3>
-          <p>Work on practical case studies to sharpen your skills.</p>
-        </div>
-        <div class="col-md-4">
-          <img src="images/feature3.png" alt="Succeed" class="img-fluid mb-3">
-          <h3>Succeed</h3>
-          <p>Achieve your goals with expert guidance and support.</p>
-        </div>
-      </div>
+  <section class="features">
+    <div class="feature-box">
+      <img src="https://via.placeholder.com/60" alt="Comprehensive Course">
+      <h3>Comprehensive Course</h3>
+      <p>Learn industry-relevant skills with in-depth training programs.</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://via.placeholder.com/60" alt="Real-Time Projects">
+      <h3>Real-Time Projects</h3>
+      <p>Gain hands-on experience with practical assignments.</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://via.placeholder.com/60" alt="Placement Support">
+      <h3>Placement Support</h3>
+      <p>Mock interviews and job placement assistance to ensure success.</p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-primary text-white text-center py-3">
-    <p>&copy; 2025 BA Coaching | All Rights Reserved</p>
+  <footer>
+    <p>&copy; 2025 Career Guild. All Rights Reserved.</p>
   </footer>
 
-  <!-- Bootstrap JavaScript -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
