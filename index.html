@@ -27,7 +27,15 @@
     .navbar-brand {
       font-size: 1.8rem;
       font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
+
+    .navbar-brand img {
+    height: 40px;  /* Adjust this value to match your logo size */
+    width: auto;
+  }
     .nav-link {
       color: #ffffff;
       margin-right: 15px;
@@ -114,7 +122,14 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">Career Guild</a>
+      <a class="navbar-brand" href="#">
+        <img 
+    src="images/Logo.jpg"  <!-- Path to your logo -->
+    alt="Career Guild Logo"  <!-- Description for screen readers -->
+    class="navbar-logo"  <!-- CSS class for styling -->
+  >
+  Career Guild  <!-- Your company name -->
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
