@@ -30,10 +30,13 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      color: white !important; /* Force white text */
     }
     .navbar-brand img {  /* ✅ Correct CSS selector */
-      height: 40px;     /* Match your logo's height */
-      width: auto;      /* Maintain aspect ratio */
+      height: 40px;
+      width: auto;
+      opacity: 0.9; /* Add transparency to logo */
+      mix-blend-mode: lighten;    /* Maintain aspect ratio */
     }
     .nav-link {
       color: #ffffff;
