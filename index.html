@@ -30,10 +30,13 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      color: white !important; /* Force white text */
     }
     .navbar-brand img {  /* ✅ Correct CSS selector */
       height: 40px;     /* Match your logo's height */
       width: auto;      /* Maintain aspect ratio */
+      opacity: 0.9; /* Add transparency */
+      mix-blend-mode: screen; 
     }
     .nav-link {
       color: #ffffff;
@@ -123,7 +126,7 @@
     <div class="container">
       <a class="navbar-brand" href="#">
         <img 
-          src="images/logo.jpg"  <!-- ✅ Case-sensitive path -->
+          src="images/logo.png"  <!-- ✅ Case-sensitive path -->
           alt="Career Guild Logo"
         >
         Career Guild
