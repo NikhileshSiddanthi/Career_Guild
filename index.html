@@ -20,7 +20,7 @@
       overflow-x: hidden;
     }
 
-    /* Navbar Styling - Fixed Issues */
+    /* Navbar Styling */
     .navbar {
       background-color: transparent;
     }
@@ -30,13 +30,13 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      color: white !important; /* Force white text */
+      color: white !important;
     }
-    .navbar-brand img {  /* ✅ Correct CSS selector */
-      height: 40px;     /* Match your logo's height */
-      width: auto;      /* Maintain aspect ratio */
-      opacity: 0.9; /* Add transparency */
-      mix-blend-mode: screen; 
+    .navbar-brand img {
+      height: 40px;
+      width: auto;
+      opacity: 0.9;
+      mix-blend-mode: screen;
     }
     .nav-link {
       color: #ffffff;
@@ -121,14 +121,13 @@
   </style>
 </head>
 <body>
-  <!-- Navigation Bar - Fixed Logo Implementation -->
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">
-  <img src="images/logo.png" alt="Career Guild">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Career Guild">
         Career Guild
-</a>
-
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -144,7 +143,6 @@
     </div>
   </nav>
 
-  <!-- Rest of your content remains unchanged -->
   <!-- Hero Section -->
   <section class="hero">
     <h1>Launch Your <span>Business Analyst</span> Career</h1>
@@ -180,3 +178,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
